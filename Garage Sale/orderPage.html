@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Equipments</title>
+    <link rel="icon" href="images/logo.png"/> 
+</head>
+<body style="background-image: url('images/background.png'); background-size: cover;">
+    <nav style="text-align: center;">
+        <a href='home.html'>
+            <img src='images/logo.png' alt='Official logo' width='100px' height='100px'> 
+        </a>
+    </nav>
+
+    <div class="mainContent">
+        <div class="leftContent">
+            <div class="content">
+                <div class="product" id="t1">
+                    <img src="images/chair.jpg" alt="Chair"/>
+                    <h2 id="price" style="font-size: 20px;">Vintage Chair</h2>
+                    <p style="font-size: 15px; font-family: 'Open Sans', sans-serif;"> Cost: $100</p>
+                    <p><button class="addToCart" onclick="addToCart('t1')">Add to Cart</button></p>
+                </div>
+                <div class="product" id="t2">
+                    <img src="images/closet.jpg" alt="Closet"/>
+                    <h2 id="price" style="font-size: 20px;">Vintage Closet</h2>
+                    <p style="font-size: 15px; font-family: 'Open Sans', sans-serif;"> Cost: $500</p>
+                    <p><button class="addToCart" onclick="addToCart('t2')">Add to Cart</button></p>
+                </div>
+                <div class="product" id="t3">
+                    <img src="images/calender.jpg" alt="Calender"/>
+                    <h2 id="price" style="font-size: 20px;">Antique Calender</h2>
+                    <p style="font-size: 15px; font-family: 'Open Sans', sans-serif;"> Cost: $400</p>
+                    <p><button class="addToCart" onclick="addToCart('t3')">Add to Cart</button></p>
+                </div>
+                <div class="product" id="t4">
+                    <img src="images/fan.jpg" alt="Fan"/>
+                    <h2 id="price" style="font-size: 20px;">Antique Fan</h2>
+                    <p style="font-size: 15px; font-family: 'Open Sans', sans-serif;"> Cost: $150</p>
+                    <p><button class="addToCart" onclick="addToCart('t4')">Add to Cart</button></p>
+                </div>
+                <div class="product" id="t5" style="justify-content: center;">
+                    <img src="images/phone.jpg" alt="Phone"/>
+                    <h2 id="price" style="font-size: 20px;">Antique Telephone</h2>
+                    <p style="font-size: 15px; font-family: 'Open Sans', sans-serif;"> Cost: $450</p>
+                    <p><button class="addToCart" onclick="addToCart('t5')">Add to Cart</button></p>
+                </div>
+            </div>  
+        </div>
+        <div class="rightContent" id="rightBasket">
+            <div class="basketClass" id="basket">
+                <h2 style="font-size: 35px;">My Basket</h2>
+            </div>
+            <div class="checkout" id="checkoutButton">
+                <button style="justify-content: center; width: 100%; height: 100px;" onclick="checkout()">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/javascript.js"></script>
+</body>
+</html> 
